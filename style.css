@@ -14,6 +14,11 @@
     #302c63 99.68%
   );
   --cards-background-color: #ffffff;
+  --footer-background-color: linear-gradient(
+    96.21deg,
+    hsl(242, 50%, 38%) 0%,
+    hsl(244, 38%, 28%) 99.68%
+  );
 }
 
 body {
@@ -131,7 +136,6 @@ input {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 100%;
-
 }
 
 ::placeholder {
@@ -153,7 +157,6 @@ textarea {
   margin-bottom: 2.4rem;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
 
-
   resize: none;
   outline: none;
 }
@@ -162,9 +165,27 @@ button {
   width: 15.1rem;
   padding: 1.6rem;
 
-  background: linear-gradient(96.21deg, hsl(242, 50%, 38%) 0%, hsl(244, 38%, 28%) 99.68%);
+  background: linear-gradient(
+    96.21deg,
+    hsl(242, 50%, 38%) 0%,
+    hsl(244, 38%, 28%) 99.68%
+  );
   border-radius: 16px;
   color: #ffffff;
   font-family: "Mulish", sans-serif;
+}
 
+footer {
+  background: var(--footer-background-color);
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+}
+
+footer p{
+  color: #ffffff;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
 }
