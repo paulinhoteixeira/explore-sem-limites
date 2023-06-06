@@ -69,7 +69,6 @@ main {
   gap: 4.9rem;
   padding: 5.2rem 3.9rem;
   background: var(--main-background-color);
-  width: 100vw;
 }
 
 .card {
@@ -78,8 +77,8 @@ main {
   align-items: flex-start;
   background-color: var(--cards-background-color);
 
-  min-width: 35.2rem;
-  padding: 2.6rem;
+  
+  padding: 2.6rem 6rem 2.6rem 2.6rem;
   border-radius: 2rem;
 
   box-shadow: 0 0.331077rem 1.32431rem hsla(0, 0%, 0%, 0.25);
@@ -103,9 +102,7 @@ main {
   line-height: 2rem;
 }
 
-.text-card{
-  width: 26.5rem;
-}
+
 
 #contact {
   display: flex;
