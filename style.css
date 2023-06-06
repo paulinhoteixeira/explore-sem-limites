@@ -50,7 +50,9 @@ h1 {
 
 h2,
 p,
-::placeholder {
+input,
+::placeholder,
+textarea {
   color: var(--text-font-color);
 }
 
@@ -125,6 +127,11 @@ input {
   width: 100%;
   border: none;
   outline: none;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 100%;
+
 }
 
 ::placeholder {
@@ -146,6 +153,8 @@ textarea {
   margin-bottom: 2.4rem;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
 
+
+  resize: none;
   outline: none;
 }
 
