@@ -36,9 +36,13 @@ header {
   align-items: center;
 }
 
-header img {
+#astronaut{
   width: 36.4rem;
   height: auto;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-timing-function: ease-in-out;
 }
 
 #text {
@@ -97,6 +101,12 @@ main {
 
 .card img {
   margin-bottom: 3.3rem;
+  transition-duration: 2s;
+  transition-property: transform;
+}
+
+.card img:hover{
+  transform: rotate(360deg);
 }
 
 .card h1 {
@@ -113,6 +123,20 @@ main {
   line-height: 2rem;
 }
 
+#container {
+  display: flex;
+  width: 100%;
+
+}
+
+
+#container h1 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 4.3rem;
+}
+
 #contact {
   display: flex;
   width: 100%;
@@ -120,14 +144,7 @@ main {
   padding: 7.8rem 4rem 6.5rem;
 }
 
-#contact h1 {
-  font-weight: 900;
-  font-size: 3.2rem;
-  line-height: 4rem;
-  margin-bottom: 4.3rem;
-}
-
-#contact > div {
+.contact-input {
   display: flex;
   align-items: center;
   width: 100%;
@@ -139,7 +156,7 @@ main {
   margin-bottom: 2.4rem;
 }
 
-#contact div img {
+.contact-input img {
   margin-right: 1.2rem;
 }
 
@@ -216,9 +233,10 @@ footer p {
     padding: 0 3rem 10rem 10rem;
   }
 
-  header img {
+ #astronaut {
     width: 70rem;
     height: auto;
+    animation: spin 3s ease;
   }
 
   header #text {
@@ -268,5 +286,45 @@ footer p {
     font-size: 1.9rem;
   line-height: 2.4rem;
 
+  }
+
+  #container {    
+    background-image: url(./assets/contactBackground.png);
+    background-repeat: no-repeat;
+    background-position: right center; 
+  }
+
+  #contact{
+    width: 50%;
+    margin-left: 3rem;
+  }
+
+}
+
+@keyframes slidein {
+  from {
+    top: -1;
+    width: 0;
+  }
+
+  to {
+    margin-bottom: 0;
+    width: 36.4rem;
+
+  }
+}
+
+@keyframes spin{
+  from {
+    right: -10;
+    width: 50%;
+    transform:rotate(180deg);
+  }
+
+
+  to {
+    width: 70rem;
+
+      transform:rotate(360deg);
   }
 }

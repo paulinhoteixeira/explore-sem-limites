@@ -16,12 +16,12 @@
 
 <body>
   <header>
-    <img src="./assets/astronaut.png" alt="Ilustração de um Astronauta no espaço">
+    <img id="astronaut" src="./assets/astronaut.png" alt="Ilustração de um Astronauta no espaço">
     <div id="text">
       <h1>Explore sem limites</h1>
       <h2>Porque o aprendizado é contínuo</h2>
       <img id="arrow" src="./assets/arrow.png" alt="Seta para baixo">
-    </div> 
+    </div>
   </header>
 
   <main>
@@ -57,19 +57,22 @@
     </div>
   </main>
 
-  <div id="contact">
-    <h1>Entre em contato</h1>
+  <div id="container">
 
-    <div>
-      <img src="./assets/personIcon.png" alt="">
-      <input type="text" placeholder="Seu nome">
+    <div id="contact">
+      <h1>Entre em contato</h1>
+
+      <div class="contact-input">
+        <img src="./assets/personIcon.png" alt="">
+        <input type="text" placeholder="Seu nome">
+      </div>
+      <div class="contact-input">
+        <img src="./assets/atIcon.png" alt="">
+        <input type="email" placeholder="Email">
+      </div>
+      <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+      <button type="submit">Enviar Mensagem</button>
     </div>
-    <div>
-      <img src="./assets/atIcon.png" alt="">
-      <input type="email" placeholder="Email">
-    </div>
-    <textarea placeholder="Digite sua mensagem aqui..."></textarea>
-    <button type="submit">Enviar Mensagem</button>
   </div>
 
   <footer>
